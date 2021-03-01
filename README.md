@@ -38,4 +38,4 @@ put a '#' in front of the GRB ID
 
 ### What are the output values?
 
-The program returns the isotropic energy between 1 kev and 10000 keV. In addition it also computes the k-correction as defined in [https://ui.adsabs.harvard.edu/abs/2003ApJ...594..674B/abstract](Bloom et al.(2003)).
+The program returns the isotropic energy between 1 kev and 10000 keV. In addition it also computes the k-correction as defined in [Bloom et al.(2003)](https://ui.adsabs.harvard.edu/abs/2003ApJ...594..674B/abstract).
