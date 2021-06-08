@@ -40,11 +40,6 @@ Fluence is given in 10e-7 erg cm^-2
 
 '''
 
-# Energy
-
-E1_REST                  = 0.1    # keV
-E2_REST                  = 10000  # keV
-
 def gamma_band(E, EPEAK, ALPHA, BETA):
 
     E0                   = EPEAK / (ALPHA + 2.0)
@@ -155,12 +150,7 @@ def compute_Eiso(DATA):
     else:
         temp_redshift    = np.zeros(NMC) + DATA['REDSHIFT']
 
-    #print(temp_redshift)
-    #import pdb; pdb.set_trace()
-    #print (temp_redshift)
     temp_dl              = cosmo.luminosity_distance(temp_redshift).value * 3.086e+24
-    #temp_dl              = [cosmo.luminosity_distance(x).value for x in temp_redshift]
-    #print(temp_dl)
 
     # Compute k-correction and Eiso
     # Speed up calculation with multiprocessing.
